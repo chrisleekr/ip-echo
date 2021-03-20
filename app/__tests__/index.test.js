@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 describe('index.js', () => {
   let mockExpressListen;
   let mockLoggerInfo;

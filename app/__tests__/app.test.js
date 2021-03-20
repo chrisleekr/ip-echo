@@ -1,5 +1,5 @@
 const supertest = require('supertest');
-const { app, logger } = require('../app');
+const { app } = require('../app');
 
 describe('app.js', () => {
   let request;
