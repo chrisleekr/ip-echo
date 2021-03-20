@@ -4,6 +4,12 @@
 
 > Print request IP address the simplest way
 
+## How to launch
+
+```bash
+$ docker-compose -f docker-compose.prod.yml up -d
+```
+
 ## How to use
 
 ```bash
