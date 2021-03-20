@@ -13,6 +13,6 @@ $ docker-compose -f docker-compose.prod.yml up -d
 ## How to use
 
 ```bash
-$ curl ip.chrislee.kr
+$ curl https://ip.chrislee.kr
 123.456.789.123
 ```
