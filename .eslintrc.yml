@@ -1,0 +1,35 @@
+env:
+  es6: true
+  node: true
+parserOptions: 
+  ecmaVersion: 2018
+extends: 
+    - airbnb-base
+    - plugin:prettier/recommended
+rules:
+    "prefer-destructuring": ["error", {"object": true, "array": false}]
+    "no-restricted-syntax": ["error", "WithStatement"]
+    "no-await-in-loop": ["off"]
+    "complexity": ["error", 7]
+    "max-lines": ["error"]
+    "max-lines-per-function": ["error"]
+overrides: 
+  - files: [ "**.test.js", "__mocks__/**" ]
+    plugins:
+      - jest
+    env:
+      jest: true
+    rules: 
+      "max-lines": ["error", max: 400]
+      "jest/no-disabled-tests": "warn"
+      "jest/no-focused-tests": "error"
+      "jest/no-identical-title": "error"
+      "jest/prefer-to-have-length": "warn"
+      "jest/valid-expect": "error"
+      "no-underscore-dangle": "off"
+      "max-lines-per-function": ["off"]
+  - files: [ "scripts/*.js" ]
+    rules: 
+      "no-console": "off"
+      "no-plusplus": "off"
+  

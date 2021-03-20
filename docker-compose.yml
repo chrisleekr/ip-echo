@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  ip-echo:
+    container_name: ip-echo
+    build:
+      context: ./
+      target: production
+    ports:
+      - 80:3000
