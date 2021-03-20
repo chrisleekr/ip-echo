@@ -1,6 +1,6 @@
 {
   "name": "ip-echo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Print request IP address the simplest way",
   "scripts": {
     "precommit": "lint-staged",
