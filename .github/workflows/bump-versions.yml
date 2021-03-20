@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
       - id: bump-version
         name: Bump Version (Patch)
-        if: github.repository == 'chrisleekr/ip-echo' && github.ref == 'refs/heads/main'
+        if: github.repository == 'chrisleekr/ip-echo' && github.ref == 'refs/heads/master'
         run: |
           git config --global user.email "${{ secrets.GIT_CI_EMAIL }}"
           git config --global user.name "$GITHUB_ACTOR"
